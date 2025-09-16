@@ -1,0 +1,13 @@
+package matrices;
+
+public class Matrices {
+
+		
+	public static void main(String[] args) {
+		
+		int arreglo[][][] = {{{2,3,3,5}},{{2,3,3,5}}
+	
+		int a = arreglo[0][0][0];
+		
+	}
+}

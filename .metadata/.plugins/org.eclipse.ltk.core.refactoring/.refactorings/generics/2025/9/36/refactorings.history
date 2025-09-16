@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;object&apos; from expression &apos;lista.get(3)&apos;&#x0D;&#x0A;- Original project: &apos;generics&apos;&#x0D;&#x0A;- Variable name: &apos;object&apos;&#x0D;&#x0A;- Destination method: &apos;generics.Main.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;lista.get(3)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;object&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;generics{Main.java" name="object" replace="true" selection="185 12" stamp="1756855320048" varType="false" version="1.0"/>
+</session>

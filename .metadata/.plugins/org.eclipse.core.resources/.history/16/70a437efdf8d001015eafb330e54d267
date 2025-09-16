@@ -1,0 +1,54 @@
+package listaSimple;
+
+public class ListaSimple {
+
+	
+	private int tamanio;
+	private Nodo nodoPrimero;
+	
+	
+	public ListaSimple() {
+		super();
+		this.tamanio = 0;
+		this.nodoPrimero = null;
+	}
+
+
+	public int getTamanio() {
+		return tamanio;
+	}
+
+
+	public void setTamanio(int tamanio) {
+		this.tamanio = tamanio;
+	}
+
+
+	public Nodo getNodoPrimero() {
+		return nodoPrimero;
+	}
+
+
+	public void setNodoPrimero(Nodo nodoPrimero) {
+		this.nodoPrimero = nodoPrimero;
+	}
+
+
+	public void agregarInicio(int valor) {
+		
+		if(estaVacia()) {
+			nodoPrimero = new Nodo(valor);
+		}
+		
+		tamanio++;
+	}
+
+
+	private boolean estaVacia() {
+		// TODO Auto-generated method stub
+		return tamanio == 0;
+	}
+	
+	
+	
+}

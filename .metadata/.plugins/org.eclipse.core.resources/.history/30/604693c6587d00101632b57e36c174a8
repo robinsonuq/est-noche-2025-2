@@ -1,0 +1,25 @@
+package matrices;
+
+import java.util.ArrayList;
+
+public class Matrices {
+
+		
+	public static void main(String[] args) {
+		
+
+		ArrayList<String> listaEmpleados = new ArrayList<>();
+		listaEmpleados.add("Robinson");
+		listaEmpleados.add("Marias");
+		listaEmpleados.add("Raul");
+		
+		for (int i = 0; i < listaEmpleados.size(); i++) {
+			if(listaEmpleados.get(i).charAt(0) == 'R') {
+				listaEmpleados.remove(i);
+			}
+		}
+		
+		System.out.println();
+		
+	}
+}
