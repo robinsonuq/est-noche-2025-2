@@ -18,8 +18,10 @@ public class ListaSimpleIterador implements Iterator<Integer> {
 
 	@Override
 	public Integer next() {
-		// TODO Auto-generated method stub
-		return aux.getSiguiente();
+		
+		int valor = aux.getValor();
+		aux = aux.getSiguiente();
+		return valor;
 	}
 
 }

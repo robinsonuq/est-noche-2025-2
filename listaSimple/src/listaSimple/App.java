@@ -11,6 +11,12 @@ public class App {
 		lista1.agregarInicio(4);
 		lista1.eliminar(5);
 		
+		for(int valor : lista1) {
+			
+		}
+		
+		
+		
 		System.out.println(lista1.print());
 		
 	}
