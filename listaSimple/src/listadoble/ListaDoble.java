@@ -1,15 +1,15 @@
-package listaSimple;
+package listadoble;
 
 import java.util.Iterator;
 
-public class ListaSimple<T> implements Iterable<T> {
+public class ListaDoble<T> implements Iterable<T> {
 
 	
 	private int tamanio;
 	private Nodo<T> nodoPrimero;
-	
-	
-	public ListaSimple() {
+	private Nodo<T> nodoUltimo;
+		
+	public ListaDoble() {
 		super();
 		this.tamanio = 0;
 		this.nodoPrimero = null;
@@ -20,11 +20,9 @@ public class ListaSimple<T> implements Iterable<T> {
 		return tamanio;
 	}
 
-
 	public void setTamanio(int tamanio) {
 		this.tamanio = tamanio;
 	}
-
 
 	public Nodo<T> getNodoPrimero() {
 		return nodoPrimero;
@@ -34,7 +32,6 @@ public class ListaSimple<T> implements Iterable<T> {
 	public void setNodoPrimero(Nodo nodoPrimero) {
 		this.nodoPrimero = nodoPrimero;
 	}
-
 
 	public void agregarInicio(int valor) {
 		

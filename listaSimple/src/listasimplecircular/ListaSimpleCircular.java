@@ -1,15 +1,15 @@
-package listaSimple;
+package listasimplecircular;
 
 import java.util.Iterator;
 
-public class ListaSimple<T> implements Iterable<T> {
+public class ListaSimpleCircular<T> implements Iterable<T> {
 
 	
 	private int tamanio;
 	private Nodo<T> nodoPrimero;
-	
-	
-	public ListaSimple() {
+	private Nodo<T> nodoUltimo;
+		
+	public ListaSimpleCircular() {
 		super();
 		this.tamanio = 0;
 		this.nodoPrimero = null;
@@ -20,21 +20,18 @@ public class ListaSimple<T> implements Iterable<T> {
 		return tamanio;
 	}
 
-
 	public void setTamanio(int tamanio) {
 		this.tamanio = tamanio;
 	}
-
 
 	public Nodo<T> getNodoPrimero() {
 		return nodoPrimero;
 	}
 
 
-	public void setNodoPrimero(Nodo nodoPrimero) {
+	public void setNodoPrimero(Nodo<T> nodoPrimero) {
 		this.nodoPrimero = nodoPrimero;
 	}
-
 
 	public void agregarInicio(int valor) {
 		
@@ -42,6 +39,8 @@ public class ListaSimple<T> implements Iterable<T> {
 		
 		if(estaVacia()) {
 			nodoPrimero = nuevoNodo;
+			nodoPrimero.setSiguiente(nodoPrimero);
+			nodoUltimo = nodoPrimero;
 		}else {
 			nuevoNodo.setSiguiente(nodoPrimero);
 			nodoPrimero = nuevoNodo;

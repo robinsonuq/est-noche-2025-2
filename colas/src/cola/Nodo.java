@@ -1,4 +1,4 @@
-package listaSimple;
+package cola;
 
 public class Nodo<T> {
 

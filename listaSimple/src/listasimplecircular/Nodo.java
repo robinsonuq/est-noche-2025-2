@@ -1,10 +1,11 @@
-package listaSimple;
+package listasimplecircular;
 
 public class Nodo<T> {
 
 	
 	private T valor;
 	private Nodo<T> siguiente;
+	private Nodo<T> anterior;
 	
 	public Nodo(T valor) {
 		this.valor = valor;
